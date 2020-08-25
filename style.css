@@ -1,0 +1,87 @@
+/* body{
+    position: relative;
+    width: 1440px;
+    height: 1024px; 
+    background: #FFFFFF;
+} */
+
+
+.mainPicture  {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 470px;
+    top: 37px;
+}    
+.outputInput {
+position: absolute ;
+width: 556px;
+height: 40px;
+left: 492.3px;
+top: 553px;
+
+}
+.dataInput {
+position: absolute;
+width: 395px;
+height: 40px;
+border: 1px solid #E0E0E0;
+border-radius: 5px;
+}
+.dataInput:hover {
+border: 2px solid #1b81f5;
+}
+.dataOutput {
+position: absolute;
+width: 130px;
+height: 40px;
+left: 428px;
+background: #0462BB;
+border: 1px solid #0462BB;
+border-radius: 5px;
+}
+.dataOutput:hover {    
+border: 2px solid #1b81f5;
+}
+.goOutput {
+position: absolute;
+width: 69px;
+height: 17px;
+left : 30.5px;
+top : -1.3px;
+font-style:normal;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 600;
+font-size: 14px;
+color: #FFFFFF;
+}
+.userTable {
+    position: absolute;
+    top : 687px;
+    left : 461.5px;
+}
+
+.name{
+    display:inline-block;
+}
+.number {
+    display:inline-block;
+    margin-left: 351px;
+}
+.userInfo {
+   margin-left: -38px;
+   border-bottom: 2px solid gray;
+}
+.svgImage {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+.userName {
+    display: inline-block;
+    margin-left :10px
+}
+.userRezult {
+   display: inline-block;
+   margin-left : 384px;
+}
