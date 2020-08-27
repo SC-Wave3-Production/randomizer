@@ -4,11 +4,12 @@ function sendRequest(string) {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
-    'name': string,
   },
+  body: JSON.stringify({
+    'name' : string
+  })
 })
 .then(response => response.json())
-.catch((error) => console.log('put your Name correctly', error))
 }
 
 function getRequest() {
@@ -22,4 +23,4 @@ function getRequest() {
 }
 
 
-sendRequest('name').then(data => console.log(data))
+sendRequest('Max').then(data => console.log(data))
