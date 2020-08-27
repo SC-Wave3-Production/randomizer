@@ -13,12 +13,13 @@ function sendRequest(string) {
 
 function getRequest() {
   const url = 'https://silenthunt.space:3000/randomizer/get-data'
-  fetch(url, {
+  return fetch(url, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json'
     }
-  })
+  }).then(data => data.json())
 }
 
-sendRequest('string').then(data => console.log(data))
+
+sendRequest('name').then(data => console.log(data))
