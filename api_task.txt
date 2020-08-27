@@ -1,6 +1,6 @@
 function sendRequest(string) {
-  const postUrl = 'http://silenthunt.space:3000/randomizer/randomize'
-  fetch(postUrl, {
+  const postUrl = 'https://silenthunt.space:3000/randomizer/randomize'
+  return fetch(postUrl, {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
@@ -8,16 +8,17 @@ function sendRequest(string) {
   },
 })
 .then(response => response.json())
-.then(data => console.log(data))
 .catch((error) => console.log('put your Name correctly', error))
 }
 
 function getRequest() {
-  const url = `http://silenthunt.space:3000/randomizer/get-data`
+  const url = 'https://silenthunt.space:3000/randomizer/get-data'
   fetch(url, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json'
-    },
-  }).then((result) => console.log(result))
+    }
+  })
 }
+
+sendRequest('string').then(data => console.log(data))
